@@ -89,6 +89,7 @@ export const DropboxLogo = styled(FaDropbox)`
   fill: var(--logo-color);
 `;
 
+
 export const Content = styled.div`
   z-index: 2;
   position: relative;
