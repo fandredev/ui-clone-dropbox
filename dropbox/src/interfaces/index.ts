@@ -3,3 +3,10 @@ export interface Props<S> {
   title: S,
   description: S;
 }
+export interface InputProps<S> {
+  name: S,
+  value: S,
+  placeholder: S,
+  type: S,
+  onChange: (name: string, value: string) => void
+}
