@@ -1,12 +1,7 @@
 import React from 'react'
 import { Container, Content, HeaderWrapper, Header, DropboxLogo } from './styles'
-interface Props {
-  variant: 'blue' | 'beige' | 'white' | 'black';
-  title: string,
-  description: string;
-}
-
-const Section: React.FC<Props> = ({ variant, title, description }) => {
+import { Props } from '../../interfaces'
+const Section: React.FC<Props<string>> = ({ variant, title, description }) => {
   const buttonVariant = Math.round(Math.random()); // 0 ou 1
   function handleToggle() {
     if (window.toggleActiveMenu) window.toggleActiveMenu()

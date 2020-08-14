@@ -1,38 +1,35 @@
 import styled from 'styled-components';
 import { FaDropbox } from 'react-icons/fa';
 
-
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-
   @media (min-width: 1024px) {
     max-width: 480px;
   }
 `;
+
 export const Navigation = styled.nav`
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
   min-height: 61px;
   > h1 {
     display: flex;
-    align-items:center;
-
+    align-items: center;
     > span {
       color: var(--color-quaternary);
       margin-left: 10px;
       font-size: 29px;
     }
   }
-  button {
+  > button {
     background: none;
     border: none;
-    font-size: 17px;
     font-weight: bold;
+    font-size: 17px;
     outline: 0;
     cursor: pointer;
   }
@@ -43,6 +40,13 @@ export const Navigation = styled.nav`
     }
   }
 `;
+
+export const DropboxLogo = styled(FaDropbox)`
+  width: 36px;
+  height: 32px;
+  fill: var(--color-blue);
+`;
+
 export const Form = styled.form`
   display: flex;
   height: 100%;
@@ -56,9 +60,13 @@ export const Form = styled.form`
     font-size: 25px;
     font-weight: 500;
   }
+  > span {
   > .subtitle {
     font-size: 12px;
     margin-top: 3px;
+    color:  #0000FF;
+    cursor: pointer;
+  }
   }
   > input {
     background: var(--color-tertiary);
@@ -71,22 +79,17 @@ export const Form = styled.form`
     margin-top: 18px;
     padding: 13px 18px;
     font-size: 16px;
-    background: var(--color-blue);
+    background-color: var(--color-blue);
     color: var(--color-tertiary);
-    border:none;
+    border: none;
     cursor: pointer;
     &:hover {
       opacity: 0.87;
     }
   }
-  > .terms { 
+  > .terms {
     font-size: 12px;
     opacity: 0.6;
     margin-top: 4px;
   }
-`;
-export const DropboxLogo = styled(FaDropbox)`
-  width: 36px;
-  height: 32px;
-  fill: var(--logo-color);
 `;

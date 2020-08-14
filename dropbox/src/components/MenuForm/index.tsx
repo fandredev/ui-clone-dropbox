@@ -17,15 +17,18 @@ const MenuForm: React.FC = () => {
       </Navigation>
 
       <Form>
-        <span>Registre-se</span>
-        <span className="subtitle">Preencha o formulário abaixo</span>
+        <span className="title">Registre-se</span>
+        <span>
+          ou
+        <span className="subtitle"> acesse sua conta</span>
+        </span>
 
         <input type="text" placeholder="Nome" />
         <input type="text" placeholder="Sobrenome" />
         <input type="text" placeholder="E-mail" />
         <input type="text" placeholder="Senha" />
         <button>Prosseguir</button>
-        <span className="terms">Esta página está sujeita à Política de Privacidade e aos Termos de serviço.</span>
+        <span className="terms">Esta página é protegida pelo reCAPTCHA e está sujeita à Política de privacidade e aos Termos de serviço do Google.</span>
       </Form>
     </Container>
   )
